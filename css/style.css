@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main-navigation main-navigation"
+    "hero-section hero-section "
+    "features sidebar"
+    "testimonials sidebar"
+    "footer footer";
+}
+.header{
+    grid-area: header;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(51,51,51,255);
+}
+.main-navigation{
+    grid-area: main-navigation;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(68,68,68,255);
+}
+.hero-section{
+    padding: 20px;
+    text-align: center;
+    grid-area: hero-section;
+    background: rgba(244,244,244,255);
+}
+.features{
+    grid-area: features;
+    padding: 20px;
+    text-align: center;
+    background: rgba(221,221,221,255);
+}
+.sidebar{
+    grid-area: sidebar;
+    padding: 20px;
+    text-align: center;
+    background: rgba(244,244,244,255);
+}
+.testimonials{
+    grid-area: testimonials;
+    padding: 20px;
+    text-align: center;
+    background: rgba(221,221,221,255);
+}
+.footer{
+    grid-area: footer;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(51,51,51,255);
+}
